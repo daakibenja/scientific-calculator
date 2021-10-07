@@ -1,0 +1,160 @@
+
+/* body{ */
+    /* background-color: gray; */
+/* } */
+
+.calculator{
+    background-color: silver;
+    border: 5px solid silver;
+    height:550px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.brand{
+    width: 300px;
+    height: 30px;
+    background-color: silver;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: 10px;
+    color: rgb(0, 0, 0);
+}
+.brand p{
+    display: inline;
+}
+.screen{
+    background-color: rgb(160, 197, 197);
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    font-weight: 1000;
+    
+    background-size: contain;
+    background-position-x: center;
+    border: 1px solid gray;
+    
+    
+    /* overflow-y: scroll */
+    
+}
+#mode{
+    position: fixed;
+    margin-top: 0px;
+    top: 35px;
+}
+#input{
+    height: 50px;
+    max-height: 50px;
+}
+#field{
+    width: 294px;
+    height: 50px;
+    font-size: large;
+     background-color: rgb(160, 197, 197);
+     border: 1px solid black;
+}
+#field:focus{
+    border-collapse: collapse;
+    background-color: rgb(160, 197, 197);;
+    
+}
+button{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    
+    /* margin: 1px; */
+    color: white;
+    background-color: rgb(75, 73, 73);
+    font-size: large;
+}
+#row9 button,#row8 button,#row7 button,#row6 button{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(31, 30, 28);
+}
+.buttons{
+    background-color: rgba(185, 187, 185, 0.623);
+    width: 300px;
+    height: 400px;
+    border-radius:10px;
+    border: 1px solid silver;
+}
+.buttonsRow{
+    /* background-color: rgb(15, 15, 15); */
+    width: 300px;
+    height: 45px;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    display: flex;
+    align-content: space-between;
+}
+#mode{
+    display: flex;
+    margin: 8px;
+    height: 12px;
+    display: flex;
+    align-content: space-between;
+    font-size: small;
+    color: black;
+}
+#result{
+    text-align: end;
+    margin: 5px;
+}
+
+.btnElem{
+    /* height: 100px; */
+    padding-top: 1px;
+    margin-top: 1px;
+    align-content: space-between;
+}
+
+/* styles for alpha and shift buttons plus their related 
+   functionalites.
+ */
+#Shift{
+    background-color:rgb(146, 146, 5);
+    font-weight: bold;
+    color: black;
+}
+#Alpha{
+    background-color: purple;
+    
+    
+}
+
+.shift{
+    color: rgb(146, 146, 5);
+    font-size: small;
+    text-align: end;
+    padding-top: 0px;
+    font-style: italic;
+    padding-bottom: 0px;
+    font-weight: bold;
+}
+.alpha{
+    
+    color: purple;
+    font-size: x-small;
+    text-align: end;
+    font-weight: bold;
+}
+
+#ac{
+    background-color:orange!important;
+    font-weight: bold;
+    color: black;
+}
+
+#del{
+background-color:orange!important;
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific calculator fx 100000000</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <div class="brand">
+            <p>Code-Lord &trade; Calculator</p>
+        </div>
+        <!-- Screen -->
+        <div class="screen">
+        <p id="mode" contenteditable="false">
+          <span></span>
+        </p>
+         <p id="input" >
+             
+         </p>
+        <!-- <hr> -->
+        <p id="result" contenteditable="false">=110</p>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="buttons">
+            <!-- shift, alpha, <- , -> mode and 2nd -->
+            <div class="buttonsRow" id='row1'>
+                
+                <div class="btnElem"><br>
+                    <button id="Shift">Shift</button>
+                </div>
+                <div class="btnElem"><br>
+                    <button id="Alpha">Alph</button>
+                </div>
+                <div class="btnElem"><br>
+                    <button id='LeftArrow'>&LeftArrow; </button>
+                </div>
+                <div class="btnElem"><br>
+                    <button id="RightArrow">&RightArrow;</button>
+                </div>
+                <div class="btnElem"></span><br>
+                    <button id='Mode'>Mode</button>
+
+                </div>
+                <div class="btnElem"><br>
+                    <button id='Second'>2nd</button>
+                </div>
+            </div>
+
+            <!-- calc integral ^ v invx logxa -->
+            <div class="buttonsRow" id='row2'>
+                <div class="btnElem">
+                    <span class='shift'>solve</span> <span class="alpha">=</span><br>
+                    <button id='calc'>Calc</button>
+                </div>
+                <div class="btnElem"><span class='shift'>d/dx</span> <span class="alpha">:</span><br>
+                    <button id='integraldx'>&Integral;dx</button>
+                </div>
+                <div class="btnElem"><br>
+                    <button id='upTriangle'>&bigtriangleup; </button>
+                </div>
+                <div class="btnElem"><br>
+                    <button id="downTriangle">&bigtriangledown;</button>
+                </div>
+                <div class="btnElem"><span class='shift'>x!</span><br>
+                    <button id='inversex'>x<sup>-1</sup></button>
+                
+                </div>
+                <div class="btnElem"><span class='shift'>&sum;</span> <span class="alpha">&prod;</span><br>
+                    <button id='logxBasea'>log<sub>a</sub>x</button>
+                </div>
+            </div>
+
+            <div class="buttonsRow" id='row3'>
+                <div class="btnElem"><span class='shift'>mod</span> <span class="alpha">&divide;R</span><br>
+                    <button id='xOvery'><sup>x</sup>/ <sub>y</sub></button>
+                </div>
+                <div class="btnElem"><span class='shift'><sup>3</sup> &Sqrt;&rect;</span><br>
+                    <button id='sqrtOfAny'>&Sqrt;&rect;</button>
+                </div>
+                <div class="btnElem"><span class='shift'>x<sup>3</sup> </span><br>
+                    <button id='xPower2'>x <sup>2</sup></button>
+                </div>
+                <div class="btnElem"><span class='shift'><sup>&rect;</sup>&Sqrt;&rect;</span><br>
+                    <button id='xPowerAny'>x <sup>&rect;</sup></button>
+                </div>
+                <div class="btnElem"><span class='shift'>10<sup>x</sup></span><br>
+                    <button id='log'>Log</button>
+                </div>
+                <div class="btnElem"><span class='shift'>&ExponentialE;<sup>&rect;</sup></span><br>
+                    <button id='ln'>Ln</button>
+                
+                </div>
+                
+            </div>
+
+            <div class="buttonsRow" id='row4'>
+                <div class="btnElem"><span class='shift'>&angle;</span> <span class="alpha">a</span><br>
+                    <button id='negative'>(-)</button>
+                </div>
+                <div class="btnElem"><span class='shift'>fact</span> <span class="alpha">b</span><br>
+                    <button id='deg'>&deg; &prime; &Prime;</button>
+                </div>
+                <div class="btnElem"><span class='shift'>Abs</span> <span class="alpha">c</span><br>
+                    <button id='hyp'>hyp </button>
+                </div>
+                <div class="btnElem"><span class='shift'>sin<sup>-1</sup></span> <span class="alpha">d</span><br>
+                    <button id='sin'>Sin</button>
+                </div>
+                <div class="btnElem"><span class='shift'>cos<sup>-1</sup></span> <span class="alpha">e</span><br>
+                    <button id='cos'>Cos</button>
+                
+                </div>
+                <div class="btnElem"><span class='shift'>tan<sup>-1</sup></span> <span class="alpha">f</span><br>
+                    <button id='tan'>Tan</button>
+                </div>
+            </div>
+
+            <div class="buttonsRow" id='row5'>
+                <div class="btnElem"><span class='shift'>sto</span> <span class="alpha">clrv</span><br>
+                    <button id='rcl'>RCL</button>
+                </div>
+                <div class="btnElem"><span class='shift'>i</span> <span class="alpha">cot</span><br>
+                    <button id='eng'>ENG</button>
+                </div>
+                <div class="btnElem"><span class='shift'>%</span> <span class="alpha">cot<sup>-1</sup></span><br>
+                    <button id='openBracket'>( </button>
+                </div>
+                <div class="btnElem"><span class='shift'>,</span> <span class="alpha">x</span><br>
+                    <button id='closeBracket'>)</button>
+                </div>
+                <div class="btnElem"><span class='shift'>a<sup>b</sup>/c</span> <span class="alpha">y</span><br>
+                    <button id='sd'>S&ReverseEquilibrium;D</button>
+                
+                </div>
+                <div class="btnElem"><span class='shift'>M-</span> <span class="alpha">m</span><br>
+                    <button id='mplus'>M+</button>
+                </div>
+            </div>
+
+            <div class="buttonsRow" id='row6'>
+                <div class="btnElem"><span class='shift'>const</span><br>
+                    <button id='seven'>7</button>
+                </div>
+                <div class="btnElem"><span class='shift'>conv</span>
+                    <button id='eight'>8</button>
+                </div>
+                <div class="btnElem"><span class='shift'>Limit</span> <span class="alpha">&infin;</span><br>
+                    <button id='nine'>9</button>
+                </div>
+                <div class="btnElem"><br>
+                    <button id="del">DEL</button>
+                
+                </div>
+                <div class="btnElem"><span class='shift'>On / off</span><br>
+                    <button id="ac">AC</button>
+                </div>
+            </div>
+
+            <div class="buttonsRow" id='row7'>
+                <div class="btnElem"><span class='shift'>Matrix</span> <br>
+                    <button id='four'>4</button>
+                </div>
+                <div class="btnElem"><span class='shift'>vector</span><br>
+                    <button id='five'>5</button>
+                </div>
+                <div class="btnElem"><span class='shift'>Fn</span> <span class="alpha">Help</span><br>
+                    <button id='six'>6 </button>
+                </div>
+                <div class="btnElem"><span class='shift'>nPr</span> <span class="alpha">GCD</span><br>
+                    <button id='times'>&times;</button>
+                </div>
+                <div class="btnElem"><span class='shift'>nCr</span> <span class="alpha">LCM</span><br>
+                    <button id='divide'>&divide;</button>
+                
+                </div>
+                
+            </div>
+
+            <div class="buttonsRow" id='row8'>
+                <div class="btnElem"><span class='shift'>STAT</span><br>
+                    <button id='one'>1</button>
+                </div>
+                <div class="btnElem"><span class='shift'>CMPLX</span> <br>
+                    <button id='two'>2</button>
+                </div>
+                <div class="btnElem"><span class='shift'>DISTR</span><br>
+                    <button id='three' >3 </button>
+                </div>
+                <div class="btnElem"><span class='shift'>Pol</span> <span class="alpha">Ceil</span><br>
+                    <button id='plus'>+</button>
+                </div>
+                <div class="btnElem"><span class='shift'>Rec</span> <span class="alpha">Floor</span><br>
+                    <button id='minus'>-</button>
+                
+                </div>
+                
+            </div>
+             
+            <div class="buttonsRow" id='row9'>
+            <div class="btnElem"><span class='shift'>Cpy</span> <span class="alpha">Pst</span><br>
+                <button id='zero'>0</button>
+            </div>
+            <div class="btnElem"><span class='shift'>Rand</span> <span class="alpha"></span><br>
+                <button id='dot'>.</button>
+            </div>
+            <div class="btnElem"><span class='shift'>&pi;</span> <span class="alpha">&exponentiale;</span><br>
+                <button id='exp'>Exp </button>
+            </div>
+            <div class="btnElem"><span class="alpha">PreAns</span><br>
+                <button id='ans'>Ans</button>
+            
+            </div>
+            <div class="btnElem"><span class='shift'>History</span><br>
+                <button id='equals'>=</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    </div>
+    <script src="calculator.js"></script>
+    <script src="buttons.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
